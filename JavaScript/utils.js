@@ -64,10 +64,18 @@ const nextPrime = (length) => {
         }
     }
 }
+
+const formattedLog = function(content, n) {
+    for(let i = 0; i < n; i++) {
+        content = '___|' + content
+    }
+    log(content)
+}
 module.exports = {
     log,
     ensureEqual,
     ensure,
     hash,
     nextPrime,
+    formattedLog,
 }
