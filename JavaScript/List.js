@@ -87,7 +87,7 @@ class List extends Gua {
             self.tail.next = new_node
         }
         // 更新尾节点
-        self.head = new_node
+        self.tail = new_node
 
         // 特殊处理
         self.length += 1

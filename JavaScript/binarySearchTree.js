@@ -104,7 +104,9 @@ class BinarySearchTree {
         if(tree !== null) {
             formattedLog(tree.element, n)
             this._preorderTraversal(tree.leftChild, n + 1)
+            
             this._preorderTraversal(tree.rightChild, n + 1)
+            
         } else {
             return
         }
